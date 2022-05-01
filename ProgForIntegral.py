@@ -41,9 +41,7 @@ xk.append(b) #точек разбиения больше, чем отрезко�
 
 for i in seredina:
     yk.append(f(i + othod))
-    summ +=f(i+othod)
-    
-summ *= dlina #вынесли длину отрезков за знак суммы для меньших потерь при вычислениях
+    summ += f(i+othod)*dlina
 
 plt.plot(x, f(x),'r')
 plt.bar(seredina, yk, width = dlina,edgecolor="k")
